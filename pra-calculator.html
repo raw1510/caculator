@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link href="pra-calculatorcss.css" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function input(val)
+        {
+            document.getElementById("screen").value+=val //value= value+val
+        }
+          
+        
+        function sol()
+        {
+            let y = eval(document.getElementById("screen").value)
+            document.getElementById("screen").value = y
+        }
+
+     </script>
+</head>
+<body>
+    <div classname="contanier">
+        <div classname="logo">
+            < Calculator > 
+        </div>
+    </div>
+    <div classname="background">
+    <div classname="contanier">
+        <div classname="left">
+        <input type="text" name="screen" placeholder="enter data" id="screen">
+        </div>
+        <div classname="right">
+        <table>
+            <tr>
+                <td><button onclick="input('7')"> 7 </button></td>
+                <td><button  onclick="input('8')"> 8 </button></td>
+                <td><button  onclick="input('9')"> 9 </button></td>
+                <td><button  onclick="input('/')"> / </button></td>
+            </tr>
+            <tr>
+                <td><button  onclick="input('4')"> 4 </button></td>
+                <td><button  onclick="input('5')"> 5 </button></td>
+                <td><button  onclick="input('6')"> 6 </button></td>
+                <td><button  onclick="input('*')"> * </button></td>
+            </tr>
+            <tr>
+                <td><button  onclick="input('1')"> 1 </button></td>
+                <td><button  onclick="input('2')"> 2 </button></td>
+                <td><button  onclick="input('3')"> 3 </button></td>
+                <td><button  onclick="input('-')"> - </button></td>
+            </tr>
+            <tr>
+                <td><button  onclick="input('.')"> . </button></td>
+                <td><button  onclick="input('0')"> 0 </button></td>
+                <td><button  onclick="sol()"> = </button></td>
+                <td><button  onclick="input('+')"> + </button></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+    <div classname="contanier">
+        <div classname="logo">
+            < /Calculator > 
+        </div>
+    </div>
+</body>
+</html>
